@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Open Securities — Case Study | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="page-case">
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-back" href="../index.html">← Portfolio</a>
+    <span class="nav-title">Open Securities — Case Study 02</span>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="hero-kicker">Case Study</p>
+    <h1 class="hero-title">Open Securities<br>Taiwan's First Third-Party Open API Platform for Securities</h1>
+    <p class="hero-sub">Connecting nearly 10 brokerage, futures, and asset-management partners inside a single app, ahead of the rest of the industry</p>
+
+    <dl class="meta-row">
+      <div class="meta-item">
+        <dt>Role</dt>
+        <dd>Product Manager, UIUX Designer &amp; Frontend Developer<br>Owned strategy, design, development, and partner negotiations end-to-end</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Timeline</dt>
+        <dd>~10 months, from concept through design, development, testing, and launch — run in parallel with partner sales</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Outcome</dt>
+        <dd>Live in iWow (1M+ downloads)<br>~10 signed brokerage/futures/asset-management partners</dd>
+      </div>
+    </dl>
+  </header>
+
+  <div class="tldr">
+    <p class="tldr-label">Summary</p>
+    <p>In response to Taiwan's financial regulator pushing an "Open Securities" policy — modelled on Open Banking — I led the end-to-end build of Taiwan's first third-party Open Securities platform, inside our existing stock-quote app iWow. I owned product strategy, interface design, and frontend development myself, while also negotiating directly with brokerages as partners — ultimately signing close to 10 brokerage, futures, and asset-management firms by launch.</p>
+    <p class="lang-note">Note — This project was originally built for the Taiwanese market, so interface screenshots and reference materials throughout this case study remain in Traditional Chinese, the product's original language.</p>
+  </div>
+
+  <section id="context">
+    <p class="section-label">Background &amp; Challenge</p>
+    <h2>When regulation opens a door,<br>someone has to build what walks through it</h2>
+    <div class="prose">
+      <p>Taiwan's Financial Supervisory Commission set out a "Capital Market Blueprint" calling for an "Open Securities" model — extending the logic of Open Banking to the securities industry, so that approved third-party providers could integrate brokerages' public data through standardized APIs. This was a policy direction, not yet a finished product; someone still had to build the platform that made it real.</p>
+      <p>I led Systex's response, building Open Securities directly inside iWow, our existing stock-quote app with over a million downloads — turning a regulatory shift into a concrete product connecting everyday investors with brokerages.</p>
+    </div>
+    <div class="arch-box">
+      <img src="../assets/images/open-securities/opensec-04.jpg" alt="FSC Capital Market Blueprint policy context slide">
+    </div>
+  </section>
+
+  <section id="ecosystem">
+    <p class="section-label">How the Ecosystem Works</p>
+    <h2>Where Systex sits in the value chain</h2>
+    <div class="prose">
+      <p>Under the Open Securities framework, brokerages expose their public data through APIs; a licensed intermediary (Financial Information Service Co.) manages authorization between parties; and approved third-party providers like Systex integrate that data into consumer-facing products.</p>
+      <p>My job sat on both sides of that chain — designing and building the consumer product inside iWow, while directly negotiating with each brokerage on the commercial terms that made participation worth their while.</p>
+    </div>
+    <div class="arch-box">
+      <img src="../assets/images/open-securities/opensec-20.jpg" alt="Open Securities ecosystem architecture diagram">
+    </div>
+  </section>
+
+  <section id="features">
+    <p class="section-label">Core Features</p>
+    <h2>Four decisions that turned a policy into a product</h2>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Brokerage Directory &amp; Product Discovery</h3>
+        <p class="tagline">One screen, every partner brokerage</p>
+        <p>Investors browsing iWow's new Open Finance section could see every partner brokerage in one place, then drill into recurring-investment and cross-border sub-brokerage products across Taiwan and US markets — all filterable by brokerage.</p>
+      </div>
+      <div class="feature-shots single">
+        <img src="../assets/images/open-securities/opensec-12.jpg" alt="Open Finance section with brokerage directory and product filters">
+      </div>
+    </div>
+
+    <div class="feature reverse">
+      <div class="feature-text">
+        <h3>Broker Storefronts</h3>
+        <p class="tagline">Giving each brokerage its own storefront</p>
+        <p>Each partner brokerage got a dedicated section with near-full-screen ad space for its own campaigns — letting investors move straight from browsing quotes into a brokerage's promotion, with a direct path into account opening.</p>
+      </div>
+      <div class="feature-shots single">
+        <img src="../assets/images/open-securities/opensec-13.jpg" alt="Brokerage storefront with full-screen campaign advertisement">
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Location-Based Branch Matching</h3>
+        <p class="tagline">Turning a nearby branch into a reason to sign up</p>
+        <p>Investors could select their preferred district, and the app would surface the matching brokerage branch — contact details, hours, and a one-tap call or map action — right before nudging them toward opening an account online.</p>
+      </div>
+      <div class="feature-shots single">
+        <img src="../assets/images/open-securities/opensec-14.jpg" alt="Location-based branch matching feature">
+      </div>
+    </div>
+
+    <div class="feature reverse">
+      <div class="feature-text">
+        <h3>Cross-Broker Watchlist Integration</h3>
+        <p class="tagline">Letting research end in one tap, not five</p>
+        <p>Once investors screened recurring-investment targets across brokerages, they could add any of them straight into iWow's own watchlist — turning one-off research into something they'd naturally keep coming back to track.</p>
+      </div>
+      <div class="feature-shots single">
+        <img src="../assets/images/open-securities/opensec-16.jpg" alt="Screening results with add-to-watchlist feature">
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Second-Touch Advertising</h3>
+        <p class="tagline">Meeting the same investor twice</p>
+        <p>After browsing a brokerage's sub-brokerage holdings, investors landed on that same brokerage's campaign ad a second time — reinforcing the message at the exact moment interest was highest, right before the account-opening prompt.</p>
+      </div>
+      <div class="feature-shots single">
+        <img src="../assets/images/open-securities/opensec-18.jpg" alt="Second-touch advertising after browsing sub-brokerage holdings">
+      </div>
+    </div>
+  </section>
+
+  <section id="delivery">
+    <p class="section-label">Beyond the Interface</p>
+    <h2>The unglamorous work that made it real</h2>
+    <div class="prose">
+      <p>Delivering this wasn't only a design problem. Alongside product strategy and interface design, I also picked up two supporting roles that made the launch possible: building the actual webview experiences embedded inside iWow myself in HTML, CSS, and JavaScript, and acting as the day-to-day point of contact for each partner brokerage — negotiating terms, onboarding their product data, and managing ongoing content updates on the platform.</p>
+      <p>I worked directly with our engineering team to define the technical architecture connecting brokerage APIs, the licensed intermediary, and Systex as a third-party provider — making sure everything I proposed to partners was something we could actually ship on schedule.</p>
+    </div>
+    <div class="skill-tags">
+      <span>Frontend development (HTML/CSS/JS)</span>
+      <span>Partner negotiation</span>
+      <span>Technical architecture discussion</span>
+    </div>
+  </section>
+
+  <section id="result">
+    <p class="section-label">Outcome &amp; Impact</p>
+    <h2>Taiwan's first,<br>and the most connected</h2>
+    <span class="status-tag">Launched June 2023 · covered by 工商時報 (CTEE)</span>
+    <div class="prose">
+      <p>Open Securities went live inside iWow on June 29, 2023, making it Taiwan's first third-party platform to combine integrated online account-opening, cross-broker product discovery, and brokerage advertising in a single consumer app. Six brokerages were live at launch — Masterlink Securities, E.SUN Securities, Mega Securities, SKIS Securities, Horizon Securities, and Fubon Securities — with connections to more than 10 brokerage, futures, and asset-management firms in total.</p>
+      <p>Local financial press covered the launch as a step toward Taiwan's broader Open Finance ecosystem, describing Systex's role as a third-party provider helping connect financial institutions horizontally through reliable API integration.</p>
+      <p>The full build — strategy, design, frontend development, testing, and launch — took about 10 months, running in parallel with ongoing partner sales conversations throughout.</p>
+    </div>
+    <div class="result-marks">
+      <div class="result-mark">
+        <h4>End-to-end ownership</h4>
+        <p>Product strategy, UIUX design, frontend development, and partner negotiation — owned solo from concept to launch</p>
+      </div>
+      <div class="result-mark">
+        <h4>Market-first execution</h4>
+        <p>Delivered Taiwan's first third-party Open Securities platform, ahead of the wider industry rollout</p>
+      </div>
+      <div class="result-mark">
+        <h4>Ecosystem building</h4>
+        <p>Signed and onboarded close to 10 brokerage, futures, and asset-management partners</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <a href="../index.html">← Back to portfolio</a>
+  <p class="fnote">Portfolio — Product Manager · UIUX Designer</p>
+</footer>
+
+</body>
+</html>
