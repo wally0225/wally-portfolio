@@ -302,6 +302,7 @@ blockquote.motto p{
   padding:32px 28px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);
   transition:background .15s ease;
 }
+.portal-card:last-child{border-right:none;}
 .portal-grid a.portal-card:hover{background:var(--paper-2);}
 .portal-num{font-family:'Noto Serif TC',serif;font-size:13px;color:var(--gold);font-weight:600;margin:0 0 14px;}
 .portal-card h3{font-family:'Noto Serif TC',serif;font-size:21px;margin:0 0 10px;font-weight:600;}
