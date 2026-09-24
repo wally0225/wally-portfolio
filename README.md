@@ -5,21 +5,35 @@ Static site, ready to deploy on GitHub Pages. No build step needed — just push
 ## Folder structure
 
 ```
-index.html                                  ← Home page
+index.html                                  ← Home page (4 category portals)
+categories/
+  pure-design.html                          ← Category: Pure Design
+  new-feature-ideation.html                 ← Category: New Feature Ideation
+  frontier-projects.html                    ← Category: Frontier Projects
+  research.html                             ← Category: Research
 case-studies/
-  entity.html                               ← Case Study 01: Entity
-  open-securities.html                      ← Case Study 02: Open Securities
+  entity.html                               ← Frontier Projects
+  open-securities.html                      ← Frontier Projects
+  mccusker-newsletter.html                  ← New Feature Ideation
+  mccusker-redesign.html                    ← Pure Design
 assets/
   css/
     style.css                               ← Shared stylesheet for the whole site
   images/
-    entity/                                 ← Screenshots used on the Entity case page
-    open-securities/                        ← Screenshots used on the Open Securities case page
+    entity/
+    open-securities/
+    mccusker/
 ```
+
+The site now has three levels: **home → category → case study**. The home page shows four category "portals" (Pure Design, New Feature Ideation, Frontier Projects, Research); each links to a category page listing that category's case studies as text-forward cards; each of those links to the full case study page.
 
 Plain HTML/CSS, no build step, no framework. One shared `style.css` drives the look of every page — edit it once and every page updates. Pages are scoped with a body class (`page-home` / `page-case`) so home-page and case-study styles don't collide even though they share one file.
 
-To add a new case study's images, drop them in a new folder under `assets/images/your-case-name/` and reference them from the new case page with a relative path, e.g. `../assets/images/your-case-name/screen-01.jpg`.
+To add a new case study:
+1. Decide which category it belongs to.
+2. Add its images to a new folder under `assets/images/your-case-name/`.
+3. Add the case study HTML file under `case-studies/`.
+4. Add a `.list-card` entry for it on the relevant `categories/xxx.html` page, and bump that category's project count on `index.html`.
 
 ## Deploy to GitHub Pages (first time)
 
@@ -34,7 +48,7 @@ To add a new case study's images, drop them in a new folder under `assets/images
 
 3. **Upload these files**
    - On your new repo's page, click **uploading an existing file**
-   - Drag in `index.html`, the `case-studies` folder, and the `assets` folder (drag whole folders — GitHub keeps the folder structure)
+   - Drag in `index.html`, the `categories` folder, the `case-studies` folder, and the `assets` folder (drag whole folders — GitHub keeps the folder structure)
    - Scroll down, click **Commit changes**
 
 4. **Turn on GitHub Pages**

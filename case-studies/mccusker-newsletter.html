@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>McCusker Institute — Newsletter Automation | Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="page-case">
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-back" href="../categories/new-feature-ideation.html">← New Feature Ideation</a>
+    <span class="nav-title">McCusker Institute — Newsletter Automation</span>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="hero-kicker">Case Study · New Feature Ideation</p>
+    <h1 class="hero-title">Automating the Newsletter Distribution Process</h1>
+    <p class="hero-sub">Turning a weekly manual task at an ANU research institute into a fully automated workflow</p>
+
+    <dl class="meta-row">
+      <div class="meta-item">
+        <dt>Role</dt>
+        <dd>Computing Intern<br>Workflow design &amp; automation build</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Timeline</dt>
+        <dd>Jul – Oct 2025 (4 months)</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Deliverables</dt>
+        <dd>Automated newsletter workflow (SharePoint + Power Automate), platform comparison &amp; recommendation</dd>
+      </div>
+    </dl>
+  </header>
+
+  <div class="tldr">
+    <p class="tldr-label">Summary</p>
+    <p>As a Computing Intern at ANU's McCusker Institute, I designed and built an automated workflow that replaced a manual, weekly newsletter process — freeing staff time and ensuring updates went out consistently. I also benchmarked our approach against two alternatives to make sure I was recommending the right long-term direction, not just the fastest one to ship.</p>
+  </div>
+
+  <section id="context">
+    <p class="section-label">Background &amp; Challenge</p>
+    <h2>A manual process,<br>quietly costing staff time</h2>
+    <div class="prose">
+      <p>The McCusker Institute (hosted by Michelle Cheah and Chris Browne) connects academic research at ANU with real-world social issues, equipping students to address complex problems through cross-disciplinary, project-based learning.</p>
+      <p>Its weekly newsletter — announcing upcoming KNoT sessions (the institute's term for its interactive workshops) — was being assembled and sent out by hand every week. That manual process caused staff distraction from teaching, inconsistent delivery, and low information transparency for the students and partners it was meant to reach. My task was to design and build a system that removed the manual step entirely.</p>
+    </div>
+  </section>
+
+  <section id="workflow">
+    <p class="section-label">The Solution</p>
+    <h2>An automated pipeline, end to end</h2>
+    <div class="prose">
+      <p>I designed and built an automated workflow using SharePoint and Power Automate, covering the entire path from raw event data to a delivered newsletter.</p>
+    </div>
+    <div class="arch-box">
+      <img src="../assets/images/mccusker/mccusker-workflow-diagram.jpg" alt="Newsletter automation workflow diagram">
+    </div>
+
+    <div class="mini-steps">
+      <div class="mini-step">
+        <h5>Recurrence</h5>
+        <p>The workflow triggers automatically on a recurring schedule (every Friday at 9 AM), so newsletters go out consistently without manual intervention.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Retrieve &amp; Parse</h5>
+        <p>Pulls the preprocessed event dataset from SharePoint and parses it into structured data — title, start time, session slug, location — for filtering.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Combine into HTML</h5>
+        <p>Filters events to the following week, then dynamically generates an HTML block per event, merged into one styled newsletter body.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Send</h5>
+        <p>Embeds the finished HTML into an email template and sends it via Outlook to the relevant student or staff mailing list.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="comparison">
+    <p class="section-label">Platform Decision</p>
+    <h2>Choosing the right tool for now — and for later</h2>
+    <div class="prose">
+      <p>Once the workflow was live, I benchmarked our approach against two alternatives, to make sure I was recommending the right long-term direction rather than just the fastest one to ship.</p>
+    </div>
+
+    <div class="wrap-scroll">
+      <table class="compare-table">
+        <thead>
+          <tr><th>Criteria</th><th>Commercial Platform</th><th>ANU Supported (built)</th><th>Fully Custom</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Automation</th>
+            <td>Restricted — limited event or email workflows</td>
+            <td><strong>High</strong> — Power Automate supports data-driven triggers</td>
+            <td><strong>High</strong> — full control over logic and personalisation</td>
+          </tr>
+          <tr>
+            <th>Data ownership</th>
+            <td>Low — data sits on third-party servers</td>
+            <td>Medium — stored within ANU's Microsoft environment</td>
+            <td><strong>High</strong> — fully owned and managed internally</td>
+          </tr>
+          <tr>
+            <th>Scalability</th>
+            <td>Low — features often gated behind premium plans</td>
+            <td>Medium — moderate scalability, may slow with complex workflows</td>
+            <td><strong>High</strong> — can expand to new features and user groups</td>
+          </tr>
+          <tr>
+            <th>Turnaround</th>
+            <td><strong>Fastest</strong> (1–2 days), but costs rise sharply with use</td>
+            <td>Moderate (5–7 days), covered by existing ANU licences</td>
+            <td>Longest (6–8 months), 2–3 years to pay back</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lang-note" style="margin-top:16px;">I built the MVP on the ANU-supported tier (SharePoint + Power Automate) for a fast, low-cost rollout within the internship's timeframe — while documenting the fully custom approach as the recommended path if the institute's usage grows past roughly 200 users.</p>
+
+    <div class="dual-list">
+      <div>
+        <h4>Internal Stakeholders</h4>
+        <div class="stake">
+          <h5>McCusker Institute</h5>
+          <p>Oversees and manages the platform to track student progress and participation.</p>
+        </div>
+        <div class="stake">
+          <h5>Interns</h5>
+          <p>Develop and maintain the system while evaluating its ongoing suitability and usability.</p>
+        </div>
+      </div>
+      <div>
+        <h4>External Stakeholders</h4>
+        <div class="stake">
+          <h5>Students &amp; Community Partners</h5>
+          <p>Register for sessions, track progress, and receive newsletters and updates.</p>
+        </div>
+        <div class="stake">
+          <h5>Course Supervisors</h5>
+          <p>Review the project's academic quality and ensure it meets course requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="result">
+    <p class="section-label">Outcome &amp; Reflection</p>
+    <h2>A small system,<br>a real amount of time back</h2>
+    <div class="prose">
+      <p>The automated workflow is live and running weekly, removing a recurring manual task from staff's plate. Just as importantly, benchmarking it against commercial and fully-custom alternatives meant the institute now has a clear, evidence-based view of when it would be worth investing further — not just a tool I happened to build.</p>
+    </div>
+    <div class="result-marks">
+      <div class="result-mark">
+        <h4>Insight</h4>
+        <p>Benchmarked three implementation paths to ground the recommendation in evidence, not preference</p>
+      </div>
+      <div class="result-mark">
+        <h4>Innovation</h4>
+        <p>Designed an end-to-end automated pipeline from raw data to a delivered, styled newsletter</p>
+      </div>
+      <div class="result-mark">
+        <h4>Collaboration</h4>
+        <p>Worked with my supervisor using Git, aligning on requirements and dividing development work</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <a href="mccusker-redesign.html">Next case study →</a>
+  <p class="fnote">Portfolio — Product Manager · UIUX Designer</p>
+</footer>
+
+</body>
+</html>
