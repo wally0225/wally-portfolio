@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Online Account-Opening — Web Redesign &amp; RWD Build | Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="page-case">
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-back" href="../categories/pure-design.html">← Pure Design</a>
+    <span class="nav-title">Online Account-Opening — Web Redesign &amp; RWD Build</span>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="hero-kicker">Case Study · Pure Design</p>
+    <h1 class="hero-title">Online Account-Opening<br>Web Redesign &amp; RWD Build</h1>
+    <p class="hero-sub">Redesigning and independently coding the account-opening entry points for two Taiwanese brokerages, from Figma to production-ready HTML/CSS/JS</p>
+
+    <dl class="meta-row">
+      <div class="meta-item">
+        <dt>Role</dt>
+        <dd>UI/UX Designer<br>Independently owned visual design, client sign-off, and front-end (HTML/CSS/JS) implementation</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Timeline</dt>
+        <dd>Capital Securities: Sep – Dec 2021<br>Taiwan Cooperative Securities: Feb – Mar 2022</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Deliverables</dt>
+        <dd>Redesigned page layouts, client-approved visual comps, hand-coded responsive front-end (desktop + mobile)</dd>
+      </div>
+    </dl>
+  </header>
+
+  <div class="tldr">
+    <p class="tldr-label">Summary</p>
+    <p>Early in my UI/UX Designer role, I was independently responsible for refreshing the online account-opening web pages for two brokerage clients — Capital Securities (群益證券) and Taiwan Cooperative Securities (合作金庫證券). With no formal design brief beyond "make the layout feel current," I redesigned each site's look, iterated directly with the client until visuals were approved, and then wrote the HTML/CSS/JavaScript myself to ship a fully responsive build that held up across both desktop and mobile.</p>
+  </div>
+
+  <section id="context">
+    <p class="section-label">Background &amp; Challenge</p>
+    <h2>An open brief,<br>and the whole pipeline to own</h2>
+    <div class="prose">
+      <p>These were among the first client-facing projects I owned after joining Systex. The brief from my manager was intentionally loose: the existing account-opening pages worked, but their layout felt dated, and it was on me to redesign them — there was no wireframe, no content strategy doc, and no pre-defined component library to start from.</p>
+      <p>That meant owning the full pipeline solo: proposing a new layout and visual direction, going back and forth with each brokerage's team until the look was signed off, and then translating the approved comps into a hand-built, responsive front-end — with no framework and no developer handoff, since I was the one writing the code.</p>
+    </div>
+  </section>
+
+  <section id="process">
+    <p class="section-label">How I Worked</p>
+    <h2>Same process, two clients</h2>
+    <div class="prose">
+      <p>Both engagements followed the same three-part loop, repeated until the client signed off and the build shipped.</p>
+    </div>
+    <div class="mini-steps">
+      <div class="mini-step">
+        <h5>Design</h5>
+        <p>Redesigned the page layout and visual style directly in Figma, working from the existing site rather than a formal brief — deciding what to keep, simplify, or restructure myself.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Client Sign-Off</h5>
+        <p>Presented comps to each brokerage's team and iterated on visuals — copy, imagery, layout — until they approved the direction, balancing my own design judgment against client feedback.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Build &amp; RWD QA</h5>
+        <p>Hand-coded the approved design in HTML/CSS/JavaScript and tested breakpoints across common device widths and orientations so neither the desktop nor mobile layout broke.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="capital">
+    <p class="section-label">Client 01</p>
+    <h2>Capital Securities</h2>
+    <div class="prose">
+      <p>Capital Securities' account-opening funnel needed the most complete rebuild of the two: a landing page that routes new vs. existing customers, a service-selection screen covering five account types, and a numbered multi-step flow through identity verification and contract signing — all wrapped in the brand's rabbit mascot and a warm gradient palette very different from the flatter, corporate look of a typical brokerage site.</p>
+    </div>
+
+    <div class="feature-full">
+      <div class="feature-text">
+        <h3>Landing &amp; Entry Routing</h3>
+        <p class="tagline">One page, two very different next steps</p>
+        <p>The entry page's job is a single decision: are you opening your first account, or adding a new investment product to one you already have? I redesigned it around two large, clearly differentiated cards so that decision reads instantly, with the mascot and market-chart illustration carrying the brand's warmth without competing with the CTAs.</p>
+      </div>
+      <div class="page-preview">
+        <div class="browser-mock">
+          <div class="browser-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">Capital Securities - Account Opening</span>
+          </div>
+          <div class="scroll-pane">
+            <img src="../assets/images/eopen/eopen-capital-landing.jpg" alt="Capital Securities account-opening landing page, desktop view">
+          </div>
+        </div>
+        <div class="phone-mock">
+          <div class="phone-notch"></div>
+          <div class="scroll-pane">
+            <img src="../assets/images/eopen/eopen-capital-landing-mobile.jpg" alt="Capital Securities account-opening landing page, mobile view">
+          </div>
+          <div class="phone-home"></div>
+        </div>
+      </div>
+      <p class="scroll-hint">↕ Scroll inside each screen to see the full page</p>
+    </div>
+
+    <div class="feature-full">
+      <div class="feature-text">
+        <h3>Service Selection</h3>
+        <p class="tagline">Five account types, one consistent card pattern</p>
+        <p>Once a user chose "new customer," they needed to pick from stock, futures, funds, bonds, and cross-border trading accounts. I gave every option the same card treatment — icon, one-line benefit, a single clear action — so the page reads as a menu rather than a wall of legal-sounding options, and reflows into a single column on mobile without losing that structure.</p>
+      </div>
+      <div class="page-preview">
+        <div class="browser-mock">
+          <div class="browser-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">Capital Securities - Service Selection</span>
+          </div>
+          <div class="scroll-pane">
+            <img src="../assets/images/eopen/eopen-capital-services-desktop.jpg" alt="Capital Securities account type selection screen, desktop view">
+          </div>
+        </div>
+        <div class="phone-mock">
+          <div class="phone-notch"></div>
+          <div class="scroll-pane">
+            <img src="../assets/images/eopen/eopen-capital-services-mobile.jpg" alt="Capital Securities account type selection screen, mobile view">
+          </div>
+          <div class="phone-home"></div>
+        </div>
+      </div>
+      <p class="scroll-hint">↕ Scroll inside each screen to see the full page</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Identity Verification &amp; Contract Signing</h3>
+        <p class="tagline">Making a six-step legal process feel finishable</p>
+        <p>Opening an account legally requires identity checks and several contract signatures. I used a persistent numbered stepper (1–6) across the top of the flow, split contract signing into its own sub-tabs by product type, and gave every unsigned item a visible "未簽署" state — so at any point, the user can see exactly how much is left before the account is live.</p>
+      </div>
+      <div class="feature-shots">
+        <img src="../assets/images/eopen/eopen-capital-verify-desktop.jpg" alt="Capital Securities identity verification screen with ID number entry and consent checkboxes">
+        <img src="../assets/images/eopen/eopen-capital-contract-desktop.jpg" alt="Capital Securities contract signing screen showing a six-step progress tracker with per-item signed/unsigned status">
+      </div>
+    </div>
+  </section>
+
+  <section id="tcs">
+    <p class="section-label">Client 02</p>
+    <h2>Taiwan Cooperative Securities</h2>
+    <div class="prose">
+      <p>Taiwan Cooperative Securities' brief was narrower in scope — refresh the look of the account-opening entry page itself, which then hands off into the brokerage's existing back-end flow. I kept the redesign disciplined: the bank's teal-and-gold brand palette, a clear checklist of what to prepare before starting (ID, a Taiwan Cooperative Bank account), and a single, unambiguous "開戶" call to action.</p>
+    </div>
+
+    <div class="feature-full">
+      <div class="feature-text">
+        <h3>Account-Opening Entry Page</h3>
+        <p class="tagline">One clear action, one clear checklist</p>
+        <p>Rather than adding marketing content the brief didn't ask for, I kept the page to what a first-time visitor actually needs: what to bring, a shortcut for anyone who still needs a bank account first, and a single primary button — then made sure that structure held up cleanly from a wide desktop layout down to a single-column phone view.</p>
+      </div>
+      <div class="page-preview fit">
+        <div class="browser-mock">
+          <div class="browser-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">Taiwan Cooperative Securities - Account Opening</span>
+          </div>
+          <div class="scroll-pane">
+            <img src="../assets/images/eopen/eopen-tcs-landing-desktop.jpg" alt="Taiwan Cooperative Securities account-opening landing page, desktop view">
+          </div>
+        </div>
+        <div class="phone-mock">
+          <div class="phone-notch"></div>
+          <div class="scroll-pane">
+            <img src="../assets/images/eopen/eopen-tcs-landing-mobile.jpg" alt="Taiwan Cooperative Securities account-opening landing page, mobile view">
+          </div>
+          <div class="phone-home"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="result">
+    <p class="section-label">Outcome &amp; Reflection</p>
+    <h2>Two live client builds,<br>no framework to lean on</h2>
+    <span class="status-tag">Live · Shipped to production for both brokerage clients</span>
+    <div class="prose">
+      <p>Both redesigns shipped to production as each brokerage's live account-opening entry point. Because I was writing the front-end by hand rather than using a component framework, "responsive" meant deliberately testing and tuning breakpoints — including orientation-specific fixes for devices like the iPhone X and iPad — rather than getting it for free.</p>
+      <p>Looking back, the loosest part of the brief — "just make it look current" — was also the most useful training: with no wireframe or content strategy handed to me, I had to develop my own judgment for what to simplify, what to keep, and how far to push back on client feedback that would have hurt the layout, all while owning the code that made it real.</p>
+    </div>
+    <div class="result-marks">
+      <div class="result-mark">
+        <h4>Independent Ownership</h4>
+        <p>Owned visual design, client sign-off, and front-end build for two live brokerage clients with no formal brief</p>
+      </div>
+      <div class="result-mark">
+        <h4>Hand-Built RWD</h4>
+        <p>Wrote the HTML/CSS/JS myself and tuned breakpoints across desktop, tablet, and phone without a component framework</p>
+      </div>
+      <div class="result-mark">
+        <h4>Client Collaboration</h4>
+        <p>Iterated visuals directly with each brokerage's team until sign-off, balancing their feedback against the redesign's structure</p>
+      </div>
+    </div>
+    <p class="lang-note" style="margin-top:32px;">Note — Both products were built for the Taiwanese market, so the interface screenshots throughout this case study remain in Traditional Chinese, their original language.</p>
+  </section>
+
+</div>
+
+<footer>
+  <a href="../index.html">← Back to portfolio</a>
+  <p class="fnote">Portfolio — Product Manager · UIUX Designer</p>
+</footer>
+
+</body>
+</html>
