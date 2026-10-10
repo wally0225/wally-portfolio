@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>iWow — New Feature Ideation | Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="page-case">
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-back" href="../categories/new-feature-ideation.html">← New Feature Ideation</a>
+    <span class="nav-title">iWow — New Feature Ideation</span>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="hero-kicker">Case Study · New Feature Ideation</p>
+    <h1 class="hero-title">iWow<br>Three New Features<br>Three Different Jobs</h1>
+    <p class="hero-sub">Pitching and shipping three brand-new capabilities on iWow — a market-education content hub, a subscription institutional-flow tracker, and a virtual portfolio tool — the first product I was ever responsible for</p>
+
+    <dl class="meta-row">
+      <div class="meta-item">
+        <dt>Role</dt>
+        <dd>UI/UX Designer (iWowpass, Smart Money X-Ray)<br>UI/UX Designer &amp; Product Manager (Virtual Portfolio)</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Timeline</dt>
+        <dd>iWowpass: Sep 2020 – Jan 2021<br>Smart Money X-Ray: Oct 2021 – Mar 2022<br>Virtual Portfolio: Dec 2021 – Dec 2022</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Deliverables</dt>
+        <dd>iWowpass content hub, Smart Money X-Ray institutional-flow analytics (subscription feature), Virtual Portfolio tracker</dd>
+      </div>
+    </dl>
+  </header>
+
+  <div class="tldr">
+    <p class="tldr-label">Summary</p>
+    <p>iWow — Systex's real-time stock-quote app — was the first product I was ever responsible for. Over about two years I pitched and shipped three new features that each solved a different problem: iWowpass turned confusing financial jargon into an in-app content hub for market newcomers; Smart Money X-Ray gave subscribers a way to see when large institutional players were buying or selling; and Virtual Portfolio let users track holdings from any brokerage inside iWow, giving a read-only quote app a reason to be opened every day.</p>
+  </div>
+
+  <section id="context">
+    <p class="section-label">Background &amp; Challenge</p>
+    <h2>One app, three very different<br>reasons to build something new</h2>
+    <div class="prose">
+      <p>iWow is Systex's real-time stock-quote app, which grew past 500,000 users over the time I worked on it. As the first product I owned, I wasn't just maintaining existing screens — I was expected to spot opportunities and pitch new features myself, then design and ship them.</p>
+      <p>This case covers the three brand-new capabilities I ideated and shipped on iWow, each aimed at a different part of the user's journey: onboarding a market beginner (iWowpass), supporting an active trader's decisions (Smart Money X-Ray), and giving a casual user a reason to come back daily (Virtual Portfolio).</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <p class="section-label">The Three Features</p>
+    <h2>iWowpass, Smart Money X-Ray &amp; Virtual Portfolio</h2>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>iWowpass — A Content Hub for Financial Literacy</h3>
+        <p class="tagline">Turning stock-market jargon into something a beginner can actually use</p>
+        <p>Many iWow users were stock-market beginners who found basic financial terms genuinely confusing. I designed iWowpass, an in-app content hub organised into four categories: Taiwan Stocks — K-lines, the three financial statements, MSCI indices, ETF types, sector concept stocks; US Stocks — cross-border brokerage trading, dividends, trading rules, profiles of companies like Airbnb and Netflix; International Finance — macro trends, inflation, rate hikes, bonds, futures &amp; options, commodities; and Metaverse — the NFT/AR/VR/Magic Leap wave that was peaking at the time.</p>
+        <p>The goal was simple: the more comfortable people felt with these concepts, the more likely they were to start investing — which, for a brokerage information service like ours, meant more engaged users. Because iWowpass was built as a webpage embedded in the app, I could update its content anytime without waiting on an app release. After launch, GA tracking showed the page pulling in roughly a hundred views a day.</p>
+      </div>
+      <div class="feature-shots">
+        <img src="../assets/images/iwow-new-features/iwow-pass-categories.jpg" alt="iWowpass home screen showing four content categories: Metaverse, Taiwan stocks, US stocks, and International Finance">
+        <img src="../assets/images/iwow-new-features/iwow-pass-article.jpg" alt="iWowpass article explaining how to start investing in US stocks, including a comparison table of overseas brokers vs. sub-brokerage">
+      </div>
+    </div>
+
+    <div class="feature reverse">
+      <div class="feature-text">
+        <h3>Smart Money X-Ray</h3>
+        <p class="tagline">Surfacing institutional buy/sell signals hidden inside the tick data</p>
+        <p>In a fast-moving market, one of the best strategies for a retail investor is to follow what institutional players ("主力") are doing — but there was no easy way to see that. I designed Smart Money X-Ray around our intraday tick data: using each stock's normal trading volume as a baseline, we flagged unusually large single buy or sell orders as likely institutional activity for users to reference.</p>
+        <p>The feature bundled several pieces: short-interval (1/3/5/15-minute) K-lines combined with CDP reference lines and institutional volume for fast trend reads; an intraday and cumulative 主力動作 bar chart showing the buy/sell ratio; a true-vs-cancelled order check, since a large order could be pulled before it filled; a per-price absorption table; and a full action log — plus a daily buy/sell signal at the top of the screen. Smart Money X-Ray shipped as a subscription feature within iWow.</p>
+      </div>
+      <div class="feature-shots">
+        <img src="../assets/images/iwow-new-features/iwow-smart-money-actions.jpg" alt="Smart Money X-Ray table listing time-stamped institutional order activity with direction, volume and price columns">
+        <img src="../assets/images/iwow-new-features/iwow-smart-money-chart.jpg" alt="Smart Money X-Ray stock detail screen for TSMC (2330) showing a K-line chart with CDP, NH, NL, AH and AL reference lines">
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Virtual Portfolio</h3>
+        <p class="tagline">Virtual holdings tracking to turn a viewer into a daily habit</p>
+        <p>Unlike a brokerage, iWow is an information service — we couldn't let users place trades through the app, which capped how much time they spent with it; at best, it was a quote-watching tool with no account data behind it. I proposed Virtual Portfolio: letting users manually add holdings they already owned elsewhere (Taiwan or US stocks), with share count, buy date, buy price, and a free-text note. The company's exclusive US-quote data source made tracking both markets in one app a genuine differentiator.</p>
+        <p>Once added, a holding feeds into a live total-assets view with P&amp;L and return rate, a pie-chart breakdown by holding (switchable between all / Taiwan / US), and per-stock market price vs. average cost, market value vs. cost basis, and P&amp;L vs. return. The feature moved iWow from a pure quote viewer to one with real — if virtual — account-level data, directly increasing time spent in-app.</p>
+      </div>
+      <div class="feature-shots">
+        <img src="../assets/images/iwow-new-features/iwow-portfolio-overview.jpg" alt="Virtual Portfolio overview screen showing total assets of 958,130 with a pie chart breakdown of holdings by stock">
+        <img src="../assets/images/iwow-new-features/iwow-portfolio-add.jpg" alt="Add-to-portfolio modal for entering share count, buy date, buy price and notes for a holding">
+      </div>
+    </div>
+  </section>
+
+  <section id="result">
+    <p class="section-label">Outcome &amp; Reflection</p>
+    <h2>Three features,<br>three different jobs to do</h2>
+    <div class="prose">
+      <p>All three features shipped to iWow's 500,000+ user base, but each was solving a different kind of problem — iWowpass was a growth and education play, Smart Money X-Ray was a monetisable analytics feature for active traders, and Virtual Portfolio was a retention play for an app that couldn't own the actual transaction. Being the first product I was ever responsible for, iWow is where I learned to recognise which of those three jobs a given opportunity actually called for, rather than reaching for the same kind of feature every time.</p>
+    </div>
+    <div class="result-marks">
+      <div class="result-mark">
+        <h4>Content as a Growth Lever</h4>
+        <p>Designed a webpage-based content hub I could update independently of app releases, pulling in roughly 100 views a day by GA tracking</p>
+      </div>
+      <div class="result-mark">
+        <h4>Subscription Feature Design</h4>
+        <p>Bundled five distinct institutional-flow tools — reference-line charts, action charts, true/false order detection, an absorption table and a full log — into one paid feature</p>
+      </div>
+      <div class="result-mark">
+        <h4>Retention Without Owning the Trade</h4>
+        <p>Shipped virtual portfolio tracking that gave a read-only quote app a daily reason to open, without iWow ever processing a real transaction</p>
+      </div>
+    </div>
+    <p class="lang-note" style="margin-top:32px;">Note — iWow is a Taiwanese product, so the interface screenshots throughout this case study remain in Traditional Chinese, their original language.</p>
+  </section>
+
+</div>
+
+<footer>
+  <a href="mccusker-redesign.html">Next case study →</a>
+  <p class="fnote">Portfolio — Product Manager · UIUX Designer</p>
+</footer>
+
+</body>
+</html>
