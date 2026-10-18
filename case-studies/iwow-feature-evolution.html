@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>iWow — Feature Evolution | Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="page-case">
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-back" href="../categories/new-feature-ideation.html">← New Feature Ideation</a>
+    <span class="nav-title">iWow — Feature Evolution</span>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="hero-kicker">Case Study · New Feature Ideation</p>
+    <h1 class="hero-title">iWow<br>Evolving Three Features<br>Already in the Product</h1>
+    <p class="hero-sub">Rebuilding three features already live on a 500,000-user stock-quote app — technical charting, stock search, and post-market information — to match what the market had moved on to expect</p>
+
+    <dl class="meta-row">
+      <div class="meta-item">
+        <dt>Role</dt>
+        <dd>UI/UX Designer → Senior Product Manager<br>Owned research, design, and (for Post-Market Information) the proposal through to engineering hand-off</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Timeline</dt>
+        <dd>Technical Charting: Jul – Dec 2021<br>Smart Search: Dec 2021 – Mar 2022<br>Post-Market Information: Aug – Dec 2022</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Deliverables</dt>
+        <dd>Charting before/after redesign, smart search UX overhaul, post-market information research &amp; approved proposal</dd>
+      </div>
+    </dl>
+  </header>
+
+  <div class="tldr">
+    <p class="tldr-label">Summary</p>
+    <p>Unlike the brand-new capabilities I pitched elsewhere on iWow, these three features already existed and already had users — which meant the job wasn't "should we build this?" but "this isn't good enough anymore." I rebuilt the technical charting screen from a single supporting indicator panel into a fully configurable multi-panel analysis tool, redesigned stock search around what investors were actually trying to find instead of just matching keywords, and led a full restructuring of post-market information into institutional, financial, and fundamental views — the kind of depth a 500,000-user app from Taiwan's largest financial-information provider should have had from the start.</p>
+    <p class="lang-note">Note — iWow is a Taiwanese product, so the interface screenshots throughout this case study remain in Traditional Chinese, their original language.</p>
+  </div>
+
+  <section id="context">
+    <p class="section-label">Background &amp; Challenge</p>
+    <h2>Three features that had<br>outgrown their first version</h2>
+    <div class="prose">
+      <p>All three of these features had shipped early in iWow's life, solved a real problem at the time, and then just... stayed as they were, while the market around them kept moving. The technical charting screen still offered only one supporting indicator panel years after competitors had moved to multi-panel analysis. Search still matched purely on stock code or keyword, so a query like "TSMC-related futures" surfaced TSMC's own stock, warrants, and options before anything useful. And post-market information — despite Systex being Taiwan's largest financial-information provider — occupied barely a third of the screen.</p>
+      <p>None of these were net-new ideas; each was a case of taking something already in daily use and deciding, feature by feature, what a second generation of it should look like.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <p class="section-label">The Three Evolutions</p>
+    <h2>Charting, Search &amp; Post-Market Information</h2>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Technical Charting Redesign</h3>
+        <p class="tagline">From one supporting chart to a fully configurable analysis suite</p>
+        <div class="feature-block">
+          <h4>Purpose</h4>
+          <p>Technical analysis is something nearly every investor opens iWow for, almost every day — combining chart timeframes with familiar indicators to decide when to buy or sell. The original screen offered only a main chart (with a choice of three chart types) plus a single supporting panel of roughly ten indicators — not enough range for an investor who wanted to cross-reference several signals before acting.</p>
+        </div>
+        <div class="feature-block">
+          <h4>Solution</h4>
+          <p>I redesigned the charting screen to support one main chart plus up to three supporting indicator panels, each drawing from a library of 24 indicators — including RSI, MACD, Bollinger Bands, Parabolic SAR, Williams %R, BIAS, and PSY — so an investor could reference several signals side by side instead of switching between screens. I also layered in the smaller details that mattered in daily use: a long-press gesture to reveal a price-reference line, ex-dividend/ex-rights date tags overlaid directly on the chart, a customizable dropdown for jumping straight to frequently used indicators, and the ability to set a different moving-average period for each chart timeframe.</p>
+        </div>
+      </div>
+      <div class="step-imgs">
+        <div class="frame-col">
+          <div class="frame ref"><img src="../assets/images/iwow-evolution/charting-before.png" alt="Original iWow charting screen: one main K-line chart with moving averages and a single BIAS indicator sub-chart"></div>
+          <p class="frame-cap">Before — one main chart + a single indicator panel</p>
+        </div>
+        <div class="frame-col">
+          <div class="frame ref"><img src="../assets/images/iwow-evolution/charting-after.png" alt="Redesigned iWow charting screen: one main K-line chart plus three configurable sub-charts showing RSI, MACD and Williams %R"></div>
+          <p class="frame-cap">After — main chart + up to three configurable indicator panels</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mini-steps">
+      <div class="mini-step">
+        <h5>Long-Press Price Line</h5>
+        <p>Holding anywhere on the chart reveals a reference line at that price, letting an investor check a specific level against the chart without zooming or scrolling.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Ex-Dividend &amp; Ex-Rights Tags</h5>
+        <p>Dividend and rights-adjustment dates appear as tags directly on the price chart, so a sudden price move is never mistaken for a trend change.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Custom Indicator Shortcuts</h5>
+        <p>A configurable dropdown menu lets investors jump straight to the handful of indicators they actually use, instead of digging through all 24 every time.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Per-Timeframe Moving Averages</h5>
+        <p>Moving-average periods can be set independently for each chart timeframe, so a 5/10/20-day setup on the daily chart doesn't have to carry over to the weekly one.</p>
+      </div>
+    </div>
+
+    <div class="prose" style="margin-top:40px;">
+      <p>Configuring a panel follows the same flow throughout: pick which indicators appear in it, then tune each one's own settings — like the moving-average periods below.</p>
+    </div>
+    <div class="filmstrip">
+      <img src="../assets/images/iwow-evolution/charting-panel-settings.png" alt="Indicator settings screen showing tabs for main chart and three sub-chart panels">
+      <img src="../assets/images/iwow-evolution/charting-indicator-picker.png" alt="Add-indicator picker with checkboxes for RSI, MACD, BIAS, PSY and other indicators">
+      <img src="../assets/images/iwow-evolution/charting-ma-periods.png" alt="Moving average configuration screen showing six customizable periods: 5, 10, 20, 30, 60 and 240">
+    </div>
+
+    <div class="feature reverse">
+      <div class="feature-text">
+        <h3>Smart Search</h3>
+        <p class="tagline">From keyword matches to results organized by what you're actually looking for</p>
+        <div class="feature-block">
+          <h4>Purpose</h4>
+          <p>The original search only matched stock codes and keywords. Searching for something like "TSMC-related futures" surfaced TSMC's own stock, warrants, and options first, burying the futures contract the user actually wanted under results they didn't — forcing a lot of unnecessary scrolling to find it.</p>
+        </div>
+        <div class="feature-block">
+          <h4>Solution</h4>
+          <p>I added product-category tabs — stocks, ETFs, futures &amp; options, warrants, and concept stocks — so a search lands directly on the right kind of instrument instead of one long mixed list. I also added a "Trending Among iWow Users" section surfacing what other users were searching, giving people a useful starting point even before they typed anything. And I let users add a result straight to their virtual portfolio or watchlist from the results list itself, removing the extra step of opening the stock's detail page first.</p>
+        </div>
+      </div>
+      <div class="feature-shots">
+        <img src="../assets/images/iwow-evolution/search-trending.png" alt="Smart Search landing screen showing a Trending Among iWow Users grid and a recent searches list">
+        <img src="../assets/images/iwow-evolution/search-category-tabs.png" alt="Smart Search results filtered by the Futures & Options category tab, showing TSMC-related futures contracts">
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Post-Market Information Overhaul</h3>
+        <p class="tagline">From a cramped afterthought to a complete post-market picture</p>
+        <div class="feature-block">
+          <h4>Purpose</h4>
+          <p>Post-market analysis matters as much as the live trading session — tracking a company's operating condition and capital flows is core to deciding whether to invest. iWow's original post-market section was basic, occupying only about a third of the screen, even though Systex, as Taiwan's largest financial-information provider, had access to far more data than the app was surfacing.</p>
+        </div>
+        <div class="feature-block">
+          <h4>Solution</h4>
+          <p>Having just stepped into the Product Manager role, I restructured post-market information around three lenses: an Institutional &amp; Chip Holdings view tracking net institutional capital flows and shareholding structure; a Financial view covering the three core financial statements — Profit &amp; Loss, Balance Sheet, and Cash Flow — plus a financial-structure analysis report; and a Fundamentals view covering company profile, the stock calendar, and dividend policy. The redesign was driven by three goals: strengthening competitiveness against rival apps that already offered richer post-market data, growing time spent in-app after market close (when usage otherwise dropped sharply), and building iWow into a genuinely complete stock-tracking product rather than just a live-quote viewer.</p>
+        </div>
+      </div>
+      <div class="step-imgs">
+        <div class="frame-col">
+          <div class="frame ref"><img src="../assets/images/iwow-evolution/postmarket-before.png" alt="Original post-market information panel, occupying roughly a third of the stock detail screen"></div>
+          <p class="frame-cap">Before — a single financial-structure table, a third of the screen</p>
+        </div>
+        <div class="frame-col">
+          <div class="frame ref"><img src="../assets/images/iwow-evolution/postmarket-menu.png" alt="Redesigned post-market menu showing Institutional, Financial and Fundamentals tabs alongside other detailed sub-sections"></div>
+          <p class="frame-cap">After — three dedicated views: Institutional, Financial, Fundamentals</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prose" style="margin-top:40px;">
+      <p>Each of the three views went deep on its own dimension — net buying/selling by institutional investors, the full set of financial statements, and dividend/company data — rather than compressing everything into one small table.</p>
+    </div>
+    <div class="filmstrip">
+      <img src="../assets/images/iwow-evolution/postmarket-institutional.png" alt="Institutional view showing five-day net institutional buying and selling as a bar chart with a daily breakdown table">
+      <img src="../assets/images/iwow-evolution/postmarket-financial.png" alt="Financial view showing a quarterly balance sheet chart with assets, liabilities and equity breakdown">
+      <img src="../assets/images/iwow-evolution/postmarket-fundamentals.png" alt="Fundamentals view showing dividend policy history with cash dividend amounts and ex-dividend dates">
+    </div>
+  </section>
+
+  <section id="result">
+    <p class="section-label">Outcome &amp; Reflection</p>
+    <h2>Two shipped, one fully built<br>but never launched</h2>
+    <span class="status-tag">Live · Technical Charting shipped to iWow's 500,000+ users</span>
+    <span class="status-tag">Live · Smart Search shipped to iWow's 500,000+ users</span>
+    <span class="status-tag">Approved, not shipped · Post-Market Information</span>
+    <div class="prose">
+      <p>Technical charting and smart search both shipped to production and are still how iWow's 500,000+ users analyze and search for stocks today.</p>
+      <p>Post-market information played out differently. I spent four months on it — gathering and making sense of the underlying data, benchmarking what competing apps already offered, and designing how institutional, financial, and fundamental information should be organized — then carried the proposal through approval and handed a complete design to the engineering team. It's the one that stays with me: the proposal was approved and the design was finished, but engineering capacity got pulled toward other priorities right after the hand-off, and it was never built. A genuinely disappointing way for four months of work to end, even though everything up to that point — framing the problem, doing the research, designing the solution, getting it approved — went exactly as it should have.</p>
+    </div>
+    <div class="result-marks">
+      <div class="result-mark">
+        <h4>Built for Depth</h4>
+        <p>Expanded technical charting from one main chart + one indicator panel to one main chart + three configurable panels across a 24-indicator library</p>
+      </div>
+      <div class="result-mark">
+        <h4>Designed Around Real Search Intent</h4>
+        <p>Replaced keyword-only search with category tabs and in-line watchlist actions, cutting the steps between searching and acting on a result</p>
+      </div>
+      <div class="result-mark">
+        <h4>Owned the Process End-to-End</h4>
+        <p>Carried the post-market information redesign from data research through competitive analysis, design, and proposal approval</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <a href="iwow-new-features.html">Next: iWow - New Feature Ideation →</a>
+  <p class="fnote">Wally's Portfolio — Product Manager · UIUX Designer</p>
+</footer>
+
+</body>
+</html>
