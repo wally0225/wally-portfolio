@@ -8,12 +8,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/theme.js"></script>
 </head>
 <body class="page-case">
 
 <nav>
   <div class="nav-inner">
-    <a class="nav-back" href="../categories/new-feature-ideation.html">← New Feature Ideation</a>
+    <div class="nav-left">
+      <a class="nav-back" href="../index.html">← Home</a>
+      <span class="nav-sep">/</span>
+      <a class="nav-back" href="../categories/new-feature-ideation.html">New Feature Ideation</a>
+    </div>
     <span class="nav-title">iWow — Feature Evolution</span>
   </div>
 </nav>
@@ -150,8 +155,8 @@
           <p class="frame-cap">Before — a single financial-structure table, a third of the screen</p>
         </div>
         <div class="frame-col">
-          <div class="frame ref"><img src="../assets/images/iwow-evolution/postmarket-menu.png" alt="Redesigned post-market menu showing Institutional, Financial and Fundamentals tabs alongside other detailed sub-sections"></div>
-          <p class="frame-cap">After — three dedicated views: Institutional, Financial, Fundamentals</p>
+          <div class="frame ref"><img src="../assets/images/iwow-evolution/postmarket-after.png" alt="Institutional view showing five-day net institutional buying and selling as a bar chart with a daily breakdown table"></div>
+          <p class="frame-cap">After — full screen view with the chart and table</p>
         </div>
       </div>
     </div>
@@ -160,7 +165,7 @@
       <p>Each of the three views went deep on its own dimension — net buying/selling by institutional investors, the full set of financial statements, and dividend/company data — rather than compressing everything into one small table.</p>
     </div>
     <div class="filmstrip">
-      <img src="../assets/images/iwow-evolution/postmarket-institutional.png" alt="Institutional view showing five-day net institutional buying and selling as a bar chart with a daily breakdown table">
+      <img src="../assets/images/iwow-evolution/postmarket-menu.png" alt="Redesigned post-market menu showing Institutional, Financial and Fundamentals tabs alongside other detailed sub-sections">
       <img src="../assets/images/iwow-evolution/postmarket-financial.png" alt="Financial view showing a quarterly balance sheet chart with assets, liabilities and equity breakdown">
       <img src="../assets/images/iwow-evolution/postmarket-fundamentals.png" alt="Fundamentals view showing dividend policy history with cash dividend amounts and ex-dividend dates">
     </div>
@@ -169,9 +174,8 @@
   <section id="result">
     <p class="section-label">Outcome &amp; Reflection</p>
     <h2>Two shipped, one fully built<br>but never launched</h2>
-    <span class="status-tag">Live · Technical Charting shipped to iWow's 500,000+ users</span>
-    <span class="status-tag">Live · Smart Search shipped to iWow's 500,000+ users</span>
-    <span class="status-tag">Approved, not shipped · Post-Market Information</span>
+    <a class="status-tag" href="https://apps.apple.com/au/app/iwow%E6%84%9B%E6%8C%96%E5%AF%B6-%E5%8D%B3%E6%99%82%E7%BE%8E%E8%82%A1%E5%8F%B0%E8%82%A1app/id434162698" target="_blank" rel="noopener">Live · Launched to 500,000+ existing users across the App Store</a>
+    <a class="status-tag" href="https://play.google.com/store/apps/details?id=com.softmobile.anWow&hl=en_GB" target="_blank" rel="noopener">Live · Launched to 500,000+ existing users across the Google Play Store</a>
     <div class="prose">
       <p>Technical charting and smart search both shipped to production and are still how iWow's 500,000+ users analyze and search for stocks today.</p>
       <p>Post-market information played out differently. I spent four months on it — gathering and making sense of the underlying data, benchmarking what competing apps already offered, and designing how institutional, financial, and fundamental information should be organized — then carried the proposal through approval and handed a complete design to the engineering team. It's the one that stays with me: the proposal was approved and the design was finished, but engineering capacity got pulled toward other priorities right after the hand-off, and it was never built. A genuinely disappointing way for four months of work to end, even though everything up to that point — framing the problem, doing the research, designing the solution, getting it approved — went exactly as it should have.</p>
