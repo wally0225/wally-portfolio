@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>mBroker — Proprietary App Platform for Brokerages | Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" type="image/png" href="../assets/images/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png">
+<script src="../assets/js/theme.js"></script>
+</head>
+<body class="page-case">
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a class="nav-back" href="../index.html">← Home</a>
+      <span class="nav-sep">/</span>
+      <a class="nav-back" href="../categories/frontier-projects.html">Frontier Projects</a>
+    </div>
+    <span class="nav-title">mBroker — Proprietary App Platform for Brokerages</span>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="hero-kicker">Case Study · Frontier Projects</p>
+    <h1 class="hero-title">mBroker<br>A Proprietary App Platform for Brokerages</h1>
+    <p class="hero-sub">Owning the largest product in my portfolio — an SDK platform that let brokerage and futures firms assemble their own branded trading app, sold through direct presales and managed across six live clients</p>
+
+    <dl class="meta-row">
+      <div class="meta-item">
+        <dt>Role</dt>
+        <dd>Product Manager<br>Owned product strategy, presales pitching, client relationship management, and the standard-feature roadmap end-to-end</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Timeline</dt>
+        <dd>Aug 2022 – May 2024</dd>
+      </div>
+      <div class="meta-item">
+        <dt>Outcome</dt>
+        <dd>6 live brokerage &amp; futures clients<br>1.2 million+ end users · standard release every 6 months</dd>
+      </div>
+    </dl>
+  </header>
+
+  <div class="tldr">
+    <p class="tldr-label">Summary</p>
+    <p>mBroker was the largest product I managed at Systex. It's an SDK-based platform that lets a brokerage or futures firm build its own proprietary trading app — assembled from a library of pre-built quote, chart, and trading modules rather than written from scratch, with custom development available for anything outside that library. I owned it end-to-end: pitching the platform directly to prospective brokerage clients, managing the relationship and roadmap for six live clients serving over 1.2 million end users, and deciding which features graduated from our in-house app into the next twice-yearly standard release.</p>
+    <p class="lang-note">Note — mBroker is built for the Taiwanese market, so the app screenshots throughout this case study remain in Traditional Chinese, their original language.</p>
+  </div>
+
+  <section id="context">
+    <p class="section-label">Background &amp; Challenge</p>
+    <h2>Eight years of iteration behind one platform shift</h2>
+    <div class="prose">
+      <p>mBroker didn't start as a proprietary-app platform — it was the result of eight years of incremental evolution inside Systex's brokerage business, starting from a single customized app in 2015, through multi-platform support, e-counter integration, and a real-time US-stock sub-brokerage launch in 2021. Each step added capability, but clients were still essentially renting a shared app experience.</p>
+      <p>The shift I managed was the next one: letting a brokerage stop renting and start owning. Instead of every client running a near-identical app with their logo swapped in, mBroker let each client assemble its own app from our component library, add custom-built features on top, and ship it under its own brand — while we kept operating the data, infrastructure, and compliance layer underneath. That's the "second growth curve" this platform created for the business, and the one I was responsible for selling and running.</p>
+    </div>
+  </section>
+
+  <section id="platform">
+    <p class="section-label">How the Platform Works</p>
+    <h2>A component library, not a template</h2>
+    <div class="prose">
+      <p>mBroker's SDK is split into a Native layer and a Hybrid (webview) layer. Native components cover anything latency-sensitive — five-tier quotes, trend charts, technical analysis — so the UI stays consistent and fast regardless of which client is running it. Hybrid components cover service content that changes often, which meant a client could get a content update without waiting on an app-store release cycle.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Standard UI vs. Custom UI</h3>
+        <p class="tagline">Same data, two different looks</p>
+        <p>Every component ships in two modes: a version with our standard UI that a client can drop straight in, or a "headless" version that hands the client raw data so their own design team builds the UI around it. That flexibility was the core of what I pitched — a client wasn't locked into our look, only our data and infrastructure underneath it.</p>
+        <p>Same underlying quote data, two different clients — our default UI (left) versus a client's own custom-built screen (right).</p>
+      </div>
+      <div class="feature-shots">
+        <img src="../assets/images/mbroker/mbroker-quote-standard.jpg" alt="Standard quote screen using mBroker's default UI, with buy/sell trading buttons docked at the bottom">
+        <img src="../assets/images/mbroker/mbroker-quote-custom.jpg" alt="Customized individual-stock quote screen, restyled by a client's own design team on top of the same underlying SDK data">
+      </div>
+    </div>
+
+    <div class="prose" style="margin-top:36px;">
+      <p>Underneath that component library sits a genuinely large data footprint — real-time quotes and trading access across both domestic and international markets, post-market fundamentals and historical data, and a curated financial news feed. Selling mBroker meant being able to speak to that depth of coverage as confidently as the UI.</p>
+      <p>That depth shows up in how far a client could push custom features on top of the SDK — from a day-trading watchlist with live up/down indicators, to a one-tap futures order ticket, to a full profit/loss simulator for multi-leg options strategies.</p>
+    </div>
+
+    <div class="filmstrip">
+      <img src="../assets/images/mbroker/mbroker-watchlist.jpg" alt="Watchlist screen with day-trading indicators showing live price movement for multiple instruments">
+      <img src="../assets/images/mbroker/mbroker-futures-oneclick.jpg" alt="Futures one-click trading screen with a full bid/ask order-book ladder">
+      <img src="../assets/images/mbroker/mbroker-options-payoff.jpg" alt="Overseas options strategy screen with a profit/loss payoff simulation chart">
+    </div>
+
+    <div class="prose" style="margin-top:36px;">
+      <p>Our largest client took that flexibility furthest, rebuilding its watchlist, individual-stock detail, and order-entry screens entirely around its own branding and layout on top of mBroker's components — real proof that a client could own the full experience, not just reskin a template.</p>
+    </div>
+
+    <div class="filmstrip">
+      <img src="../assets/images/mbroker/mbroker-client-watchlist.jpg" alt="Our largest client's custom-built watchlist screen">
+      <img src="../assets/images/mbroker/mbroker-client-stock-detail.jpg" alt="Our largest client's custom-built individual-stock detail screen with K-line chart">
+      <img src="../assets/images/mbroker/mbroker-client-order.jpg" alt="Our largest client's custom-built order entry screen with a five-tier bid/ask ladder">
+    </div>
+  </section>
+
+  <section id="presales">
+    <p class="section-label">Presales &amp; Client Engagement</p>
+    <h2>The part of the job that wasn't only design</h2>
+    <div class="prose">
+      <p>Because mBroker is a B2B platform, a large part of my role had nothing to do with screens: it was presales. I built and delivered the pitch deck myself, walked prospective brokerage and futures clients through the SDK's capabilities and fee structure, and negotiated the commercial terms that turned a pitch into a signed client. Over my time on the product, that work brought on six live clients: Cathay Securities, Shin Kong International Securities, Yung Shin Securities, Yung Chuan Securities, President Futures Corp., and Concord Futures Corp.</p>
+      <p>Each client could choose between two delivery models depending on how much of their own design and engineering capacity they wanted to commit. I used this standard SOP in every pitch so prospective clients could see exactly what they'd be responsible for under each path before signing — and so my own team knew what we were committing to deliver.</p>
+    </div>
+
+    <div class="flow">
+      <div>
+        <p class="flow-path-title">Independent Development</p>
+        <div class="flow-lanes">
+          <div>
+            <p class="flow-lane-label">Client side</p>
+            <div class="flow-steps">
+              <div class="flow-step"><strong>UI/UX Design</strong></div>
+              <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+              <div class="flow-step"><strong>App Development</strong></div>
+              <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+              <div class="flow-step"><strong>Submit to Test App Store</strong></div>
+              <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+              <div class="flow-step"><strong>UAT Testing</strong></div>
+              <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+              <div class="flow-step"><strong>Deploy to Production</strong></div>
+            </div>
+          </div>
+          <div>
+            <p class="flow-lane-label">Systex side</p>
+            <div class="flow-steps">
+              <div class="flow-step"><strong>SDK Handover</strong><p>Client logs in and downloads the quote SDK, post-market API, and chart components to build with</p></div>
+              <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+              <div class="flow-step"><strong>Test Environment</strong><p>Provided and maintained throughout the client's app development and UAT</p></div>
+              <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+              <div class="flow-step"><strong>Production Data &amp; Monitoring</strong><p>Live data access and real-time monitoring once the client deploys to production</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="flow-final">Launch → ongoing CS support &amp; maintenance (quote-data related)</div>
+      </div>
+
+      <div>
+        <p class="flow-path-title">Collaborative Development</p>
+        <div class="flow-lanes">
+          <div>
+            <p class="flow-lane-label">Client side</p>
+            <div class="flow-steps">
+              <div class="flow-step"><strong>UI/UX Design only</strong><p>No in-house app development team required</p></div>
+            </div>
+          </div>
+          <div>
+            <p class="flow-lane-label">Systex side</p>
+            <div class="flow-steps">
+              <div class="flow-step"><strong>App Build</strong><p>Builds the app from the client's design</p></div>
+              <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+              <div class="flow-step"><strong>SDK Integration</strong></div>
+              <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></div>
+              <div class="flow-step"><strong>Data Source Integration</strong></div>
+            </div>
+          </div>
+          <div class="flow-handoff">Figma design handoff</div>
+        </div>
+        <div class="flow-final">Go-live → ongoing maintenance, supported via a dedicated CS mailbox</div>
+      </div>
+    </div>
+
+    <div class="skill-tags">
+      <span>Presales pitching</span>
+      <span>Commercial negotiation</span>
+      <span>Client relationship management</span>
+      <span>Multi-tenant roadmap planning</span>
+    </div>
+  </section>
+
+  <section id="scale">
+    <p class="section-label">Running It at Scale</p>
+    <h2>Six clients, one shared roadmap</h2>
+    <div class="prose">
+      <p>Underneath all six client apps runs a shared backend infrastructure built for redundancy and real-time reliability, covering core functions like login, certificates, order placement, and account inquiries — backed by a dedicated test environment so new builds never touch the production path. Keeping six independently-branded clients stable on that shared infrastructure was supported by a team of 100+ R&amp;D engineers and 50 customer-service staff, running a 24-hour monitoring center that watched everything from connection health to data integrity in real time.</p>
+    </div>
+
+    <div class="prose" style="margin-top:32px;">
+      <p>I also owned the standard feature roadmap shared across all six clients, released every six months. Rather than guessing what to build next, I used Systex's own in-house app, iWow, as a testing ground: a new idea would ship to iWow first, and if it landed well with that user base, I'd schedule it into the next mBroker standard release — so every client got a feature that had already proven itself, not an untested bet.</p>
+    </div>
+    <div class="mini-steps">
+      <div class="mini-step">
+        <h5>Test on iWow</h5>
+        <p>New feature ideas ship first to our in-house stock-quote app, where I could observe real usage before committing client budget to it.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Evaluate Reception</h5>
+        <p>I tracked how the feature actually performed with iWow's user base before deciding whether it belonged in the shared roadmap.</p>
+      </div>
+      <div class="mini-step">
+        <h5>Schedule the Standard Release</h5>
+        <p>Proven features get scheduled into the next six-month mBroker standard update, so all six clients receive the same validated upgrade together.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="result">
+    <p class="section-label">Outcome &amp; Reflection</p>
+    <h2>The biggest product I ever ran</h2>
+    <span class="status-tag">Live · 6 brokerage &amp; futures clients · 1.2 million+ end users</span>
+    <div class="prose">
+      <p>By the time I moved on, mBroker was live across six brokerage and futures clients and serving more than 1.2 million end users on a twice-yearly release cycle. Of everything I worked on at Systex, this is the clearest example of the job being bigger than the screens: closing a client meant as much presales and negotiation as it did product thinking, and keeping six clients happy on one shared platform meant constantly weighing one client's custom request against what was good for the roadmap as a whole.</p>
+    </div>
+    <div class="result-marks">
+      <div class="result-mark">
+        <h4>Presales to Signed Client</h4>
+        <p>Built and delivered the SDK pitch myself, converting prospective brokerage and futures firms into six signed, live clients</p>
+      </div>
+      <div class="result-mark">
+        <h4>Platform at Scale</h4>
+        <p>Owned product strategy for a multi-tenant SDK platform serving 1.2 million+ end users across six independently-branded apps</p>
+      </div>
+      <div class="result-mark">
+        <h4>A Validated Feature Pipeline</h4>
+        <p>Used our in-house app as a testbed, scheduling only proven features into mBroker's shared six-month release cycle</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <a href="entity.html">Next: Entity →</a>
+  <p class="fnote">Wally's Portfolio — Product Manager · UIUX Designer</p>
+</footer>
+
+</body>
+</html>
