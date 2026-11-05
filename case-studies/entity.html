@@ -11,9 +11,13 @@
 <link rel="icon" type="image/png" href="../assets/images/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png">
 <script src="../assets/js/theme.js"></script>
+<script src="../assets/js/reveal.js" defer></script>
+<script src="../assets/js/progress.js" defer></script>
+<script src="../assets/js/counter.js" defer></script>
 </head>
 <body class="page-case">
 
+<div class="reading-progress"><div class="reading-progress-fill"></div></div>
 <nav>
   <div class="nav-inner">
     <div class="nav-left">
@@ -26,10 +30,20 @@
 </nav>
 
 <div class="wrap">
-  <header class="hero">
-    <p class="hero-kicker">Case Study</p>
-    <h1 class="hero-title">Entity<br>Your Personal AI Financial Assistant</h1>
-    <p class="hero-sub">A next-generation AI financial assistant proposed to a prospective client in response to the GenAI wave</p>
+  <header class="hero hero-case">
+    <img class="hero-art" src="../assets/images/entity/hero.png" alt="" aria-hidden="true">
+    <div class="hero-head" data-folio="03">
+      <p class="hero-kicker">Case Study</p>
+      <h1 class="hero-title">Entity<br>Your Personal AI Financial Assistant</h1>
+      <p class="hero-sub">A next-generation AI financial assistant proposed to a prospective client in response to the GenAI wave</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-block">
+        <span class="stat-num" data-target="655" data-suffix="K+">0</span>
+        <p class="stat-label">users across partner brokerages</p>
+      </div>
+    </div>
 
     <dl class="meta-row">
       <div class="meta-item">
@@ -49,21 +63,22 @@
 
   <div class="tldr">
     <p class="tldr-label">Summary</p>
-    <p>In response to the GenAI wave, I led the market research and product design for Entity — a next-generation AI assistant built on top of our existing LINE@ financial chatbot service. Entity doesn't just answer market questions; it connects a user's personal portfolio with brokers' own expert insights, turning GenAI into a genuinely personalized financial assistant. The proposal was ultimately not signed, but it demonstrated my ability to carry a project end-to-end — from research, through design, to technical feasibility.</p>
+    <p>In response to the GenAI wave, I led the market research and product design for Entity — a next-generation AI assistant built on top of our existing LINE@ financial chatbot service. Entity doesn't just answer market questions; it connects a user's personal portfolio with brokers' own expert insights, turning GenAI into a genuinely personalized financial assistant. At a time when Taiwan's financial industry was still wary of AI, I worked with our engineering team to scope a version we could actually build, then presented it on-site to the client to spark their interest in where the technology was heading. The proposal was ultimately not signed, but it demonstrated my ability to respond quickly to a new technology and carry a project end-to-end — from research, through design and technical feasibility, to the client presentation.</p>
     <p class="lang-note">Note — This project was originally built for the Taiwanese market, so the interface screenshots throughout this case study remain in Traditional Chinese, the product's original language.</p>
   </div>
 
   <section id="context">
-    <p class="section-label">Background &amp; Challenge</p>
+    <p class="section-label"><span class="folio-num">01</span>Background &amp; Challenge</p>
     <h2>Selling more than a product —<br>Selling what's next</h2>
     <div class="prose">
       <p>Systex proposed introducing our LINE@ financial chatbot service to a prospective brokerage client. Around the same time, the emergence of ChatGPT opened up a shift in what an "intelligent customer service" product could become — this pitch wasn't just about selling an existing product, but about proving we could design the next generation of GenAI-powered financial assistants.</p>
+      <p>The harder part was the audience. Taiwan's financial industry is conservative and heavily regulated, and in 2023 most institutions still saw generative AI as an unproven risk rather than an opportunity. Rather than wait for the market to warm up, I treated that hesitation as the real design brief: the proposal had to make an unfamiliar technology feel concrete, buildable, and commercially relevant to a client who hadn't yet asked for it.</p>
       <p>I used the 655,000 users already active across our four existing partner brokerages as market validation, building credibility into the proposal from the start.</p>
     </div>
   </section>
 
   <section id="research">
-    <p class="section-label">Research &amp; Insight</p>
+    <p class="section-label"><span class="folio-num">02</span>Research &amp; Insight</p>
     <h2>Finding the gap between<br>three real GenAI finance products</h2>
     <div class="prose">
       <p>Before settling on a product direction, I ran a systematic study of how GenAI was being applied in finance — including BloombergGPT's training methodology, Tiger Brokers' TigerGPT investment assistant, European neobank bunq's conversational "Finn" chatbot, and McKinsey's perspective on customer-centric intelligent finance.</p>
@@ -75,7 +90,7 @@
   </section>
 
   <section id="iteration">
-    <p class="section-label">Design Iteration</p>
+    <p class="section-label"><span class="folio-num">03</span>Design Iteration</p>
     <h2>From "Hey, did you know?"<br>to Entity</h2>
 
     <div class="steps">
@@ -129,7 +144,7 @@
   </section>
 
   <section id="features">
-    <p class="section-label">Core Features</p>
+    <p class="section-label"><span class="folio-num">04</span>Core Features</p>
     <h2>Three design decisions worth highlighting</h2>
 
     <div class="feature">
@@ -172,11 +187,11 @@
   </section>
 
   <section id="architecture">
-    <p class="section-label">Technical Feasibility</p>
+    <p class="section-label"><span class="folio-num">05</span>Technical Feasibility</p>
     <h2>A vision that also had to work</h2>
     <div class="prose">
-      <p>To make the proposal more convincing, I also mapped out a complete technical architecture — from the data pool (market, industry, institutional, and personal data), through data processing and model training (built on ChatGPT), to the API service layer — and discussed feasibility directly with the engineering team.</p>
-      <p>This ensured every feature I promised in the proposal had a clear technical path behind it, not just a design vision. As a PM, I need to be able to lead and take part in these more technical architecture discussions.</p>
+      <p>With an audience already sceptical of AI, a beautiful concept wasn't enough — it had to be credible. I mapped out a complete technical architecture, from the data pool (market, industry, institutional, and personal data), through data processing and model training (built on ChatGPT), to the API service layer, then worked through it with our engineering team in a series of planning discussions.</p>
+      <p>Those sessions turned the vision into a feasible version: we agreed which features could be built on our existing data and infrastructure, which needed new work, and what a realistic first release would look like. That meant every feature I put in front of the client had a clear technical path behind it, not just a design vision. As a PM, I need to be able to lead and take part in these more technical architecture discussions.</p>
     </div>
     <div class="arch-box">
       <img src="../assets/images/entity/architecture.jpg" alt="Entity technical architecture diagram">
@@ -184,21 +199,25 @@
   </section>
 
   <section id="result">
-    <p class="section-label">Outcome &amp; Reflection</p>
+    <p class="section-label"><span class="folio-num">06</span>Outcome &amp; Reflection</p>
     <h2>No deal signed —<br>but the process held up</h2>
     <span class="status-tag">Not signed · untracked after I left for my master's</span>
     <div class="prose">
-      <p>The proposal was ultimately not signed. But the process proved something important: building on six months of research and iteration, I was able to turn one month of direct client engagement into a complete proposal — backed by market evidence, user insight, visual design, and technical feasibility.</p>
+      <p>I presented Entity on-site to the client's team, walking them through the research, the prototype, and the engineering-backed architecture. The presentation did what it needed to in the room: it moved the conversation from whether AI belonged in their service at all to what it could do for their customers, and sparked genuine interest in the technology and where the industry was heading.</p>
+      <p>The proposal was ultimately not signed. But the process proved something important: building on six months of research and iteration, I was able to turn one month of direct client engagement into a complete proposal — backed by market evidence, user insight, visual design, and technical feasibility — and present it convincingly to an audience that hadn't asked for it.</p>
       <p>It also sharpened something I now see clearly: designing B2B fintech products always means answering both the end user's real needs and the client's commercial goals — miss either one, and the pitch won't truly land.</p>
     </div>
+    <blockquote class="pull-quote">
+      <p>Designing B2B fintech products always means answering both the end user's real needs and the client's commercial goals.</p>
+    </blockquote>
     <div class="result-marks">
       <div class="result-mark">
         <h4>Research-driven design</h4>
         <p>Systematically analyzed three real GenAI finance products to extract a differentiating insight: personal-asset integration</p>
       </div>
       <div class="result-mark">
-        <h4>End-to-end ownership</h4>
-        <p>Led the full process alone — market research, strategic direction, interface design, and technical architecture</p>
+        <h4>Responding to new technology</h4>
+        <p>Moved early on GenAI despite low industry acceptance, scoping a feasible version with engineering and presenting it on-site to the client</p>
       </div>
       <div class="result-mark">
         <h4>Balancing business and experience</h4>

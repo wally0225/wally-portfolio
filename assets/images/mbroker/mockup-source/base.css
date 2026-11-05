@@ -1,0 +1,16 @@
+html,body{margin:0;background:transparent;}
+.stage{position:relative;width:1200px;height:1000px;overflow:hidden;perspective:2200px;perspective-origin:60% 40%;}
+.el{position:absolute;transform-style:preserve-3d;}
+/* phone */
+.phone{width:340px;padding:11px;border-radius:58px;
+  background:linear-gradient(135deg,#f2f2f4 0%,#b9b9bf 30%,#8d8d94 55%,#d8d8dc 80%,#a5a5ab 100%);
+  box-shadow:
+    1px 1px 0 #9a9aa0,2px 2px 0 #909096,3px 3px 0 #86868c,4px 4px 0 #7c7c82,5px 5px 0 #727278,6px 6px 0 #68686e,7px 7px 0 #5e5e64,
+    40px 60px 80px rgba(0,0,0,.35);}
+.phone .bezel{background:#050505;border-radius:48px;padding:8px;position:relative;}
+.phone img{display:block;width:100%;border-radius:40px;}
+.phone .island{position:absolute;top:20px;left:50%;transform:translateX(-50%);width:96px;height:28px;border-radius:20px;background:#000;}
+.phone .btn{position:absolute;right:-3px;width:4px;border-radius:2px;background:#8d8d94;}
+/* floating cards */
+.card img{display:block;width:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45)) drop-shadow(0 8px 12px rgba(0,0,0,.3));}
+.logo img{display:block;width:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.35));}

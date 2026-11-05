@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.stage{perspective:2400px;perspective-origin:50% 45%;}
+.phone{width:300px;}
+.phone .bezel{background:#050505;}
+.phone img{border-radius:36px;}
+/* the swappable module region inside the phone screen */
+.slot{position:absolute;left:6px;right:6px;top:233px;height:304px;border:3px dashed #2fb383;border-radius:10px;box-shadow:0 0 0 4px rgba(47,179,131,.18);}
+.mod{width:290px;}
+.mod img{display:block;width:100%;border-radius:14px;background:#fff;
+  box-shadow:0 0 0 2px rgba(47,179,131,.9),0 30px 50px rgba(0,0,0,.4),0 8px 14px rgba(0,0,0,.25);}
+.mod.back img{box-shadow:0 0 0 1px rgba(0,0,0,.08),0 30px 50px rgba(0,0,0,.35),0 8px 14px rgba(0,0,0,.2);}
+</style></head><body>
+<div class="stage">
+  <!-- module deck, furthest first -->
+  <div class="el mod back" style="left:820px;top:170px;transform:rotateY(-22deg) rotateX(6deg) rotateZ(2deg) translateZ(-40px)">
+    <img src="/Users/xunwei/Desktop/ANU/CV/wally-portfolio/assets/images/mbroker/mbroker-4.png"></div>
+  <div class="el mod back" style="left:760px;top:290px;transform:rotateY(-22deg) rotateX(6deg) rotateZ(2deg) translateZ(20px)">
+    <img src="/Users/xunwei/Desktop/ANU/CV/wally-portfolio/assets/images/mbroker/mbroker-3.png"></div>
+
+  <div class="el phone" style="left:330px;top:110px;transform:rotateY(-22deg) rotateX(6deg) rotateZ(2deg)">
+    <div class="bezel"><img src="/Users/xunwei/Desktop/ANU/CV/wally-portfolio/assets/images/mbroker/mbroker-1.png"></div>
+    <div class="btn" style="top:150px;height:70px"></div>
+  </div>
+
+  <div class="el mod" style="left:690px;top:420px;transform:rotateY(-22deg) rotateX(6deg) rotateZ(2deg) translateZ(110px)">
+    <img src="/Users/xunwei/Desktop/ANU/CV/wally-portfolio/assets/images/mbroker/mbroker-2.png"></div>
+</div></body></html>

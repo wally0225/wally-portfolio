@@ -11,9 +11,13 @@
 <link rel="icon" type="image/png" href="../assets/images/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png">
 <script src="../assets/js/theme.js"></script>
+<script src="../assets/js/reveal.js" defer></script>
+<script src="../assets/js/progress.js" defer></script>
+<script src="../assets/js/counter.js" defer></script>
 </head>
 <body class="page-case">
 
+<div class="reading-progress"><div class="reading-progress-fill"></div></div>
 <nav>
   <div class="nav-inner">
     <div class="nav-left">
@@ -26,15 +30,28 @@
 </nav>
 
 <div class="wrap">
-  <header class="hero">
-    <p class="hero-kicker">Case Study · New Feature Ideation</p>
-    <h1 class="hero-title">iWow<br>Evolving Three Features<br>Already in the Product</h1>
-    <p class="hero-sub">Rebuilding three features already live on a 500,000-user stock-quote app — technical charting, stock search, and post-market information — to match what the market had moved on to expect</p>
+  <header class="hero hero-case">
+    <div class="hero-head" data-folio="01">
+      <p class="hero-kicker">Case Study · New Feature Ideation</p>
+      <h1 class="hero-title">iWow<br>Evolving Three Features<br>Already in the Product</h1>
+      <p class="hero-sub">Rebuilding three features already live on a 500,000-user stock-quote app — technical charting, stock search, and post-market information — to match what the market had moved on to expect</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-block">
+        <span class="stat-num" data-target="500" data-suffix="K+">0</span>
+        <p class="stat-label">active iWow users</p>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num" data-target="1" data-suffix="M+">0</span>
+        <p class="stat-label">iWow downloads</p>
+      </div>
+    </div>
 
     <dl class="meta-row">
       <div class="meta-item">
         <dt>Role</dt>
-        <dd>UI/UX Designer → Senior Product Manager<br>Owned research, design, and (for Post-Market Information) the proposal through to engineering hand-off</dd>
+        <dd>UI/UX Designer → Senior Product Specialist<br>Owned research, design, and (for Post-Market Information) the proposal through to engineering hand-off</dd>
       </div>
       <div class="meta-item">
         <dt>Timeline</dt>
@@ -54,7 +71,7 @@
   </div>
 
   <section id="context">
-    <p class="section-label">Background &amp; Challenge</p>
+    <p class="section-label"><span class="folio-num">01</span>Background &amp; Challenge</p>
     <h2>Three features that had<br>outgrown their first version</h2>
     <div class="prose">
       <p>All three of these features had shipped early in iWow's life, solved a real problem at the time, and then just... stayed as they were, while the market around them kept moving. The technical charting screen still offered only one supporting indicator panel years after competitors had moved to multi-panel analysis. Search still matched purely on stock code or keyword, so a query like "TSMC-related futures" surfaced TSMC's own stock, warrants, and options before anything useful. And post-market information — despite Systex being Taiwan's largest financial-information provider — occupied barely a third of the screen.</p>
@@ -63,7 +80,7 @@
   </section>
 
   <section id="features">
-    <p class="section-label">The Three Evolutions</p>
+    <p class="section-label"><span class="folio-num">02</span>The Three Evolutions</p>
     <h2>Charting, Search &amp; Post-Market Information</h2>
 
     <div class="feature">
@@ -174,7 +191,7 @@
   </section>
 
   <section id="result">
-    <p class="section-label">Outcome &amp; Reflection</p>
+    <p class="section-label"><span class="folio-num">03</span>Outcome &amp; Reflection</p>
     <h2>Two shipped, one fully built<br>but never launched</h2>
     <a class="status-tag" href="https://apps.apple.com/au/app/iwow%E6%84%9B%E6%8C%96%E5%AF%B6-%E5%8D%B3%E6%99%82%E7%BE%8E%E8%82%A1%E5%8F%B0%E8%82%A1app/id434162698" target="_blank" rel="noopener">Live · Launched to 500,000+ existing users across the App Store</a>
     <a class="status-tag" href="https://play.google.com/store/apps/details?id=com.softmobile.anWow&hl=en_GB" target="_blank" rel="noopener">Live · Launched to 500,000+ existing users across the Google Play Store</a>
@@ -182,6 +199,9 @@
       <p>Technical charting and smart search both shipped to production and are still how iWow's 500,000+ users analyze and search for stocks today.</p>
       <p>Post-market information played out differently. I spent four months on it — gathering and making sense of the underlying data, benchmarking what competing apps already offered, and designing how institutional, financial, and fundamental information should be organized — then carried the proposal through approval and handed a complete design to the engineering team. It's the one that stays with me: the proposal was approved and the design was finished, but engineering capacity got pulled toward other priorities right after the hand-off, and it was never built. A genuinely disappointing way for four months of work to end, even though everything up to that point — framing the problem, doing the research, designing the solution, getting it approved — went exactly as it should have.</p>
     </div>
+    <blockquote class="pull-quote">
+      <p>It's the one that stays with me: everything up to the hand-off went exactly as it should have.</p>
+    </blockquote>
     <div class="result-marks">
       <div class="result-mark">
         <h4>Built for Depth</h4>

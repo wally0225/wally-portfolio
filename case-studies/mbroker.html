@@ -11,9 +11,13 @@
 <link rel="icon" type="image/png" href="../assets/images/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png">
 <script src="../assets/js/theme.js"></script>
+<script src="../assets/js/reveal.js" defer></script>
+<script src="../assets/js/progress.js" defer></script>
+<script src="../assets/js/counter.js" defer></script>
 </head>
 <body class="page-case">
 
+<div class="reading-progress"><div class="reading-progress-fill"></div></div>
 <nav>
   <div class="nav-inner">
     <div class="nav-left">
@@ -26,10 +30,24 @@
 </nav>
 
 <div class="wrap">
-  <header class="hero">
-    <p class="hero-kicker">Case Study · Frontier Projects</p>
-    <h1 class="hero-title">mBroker<br>A Proprietary App Platform for Brokerages</h1>
-    <p class="hero-sub">Owning the largest product in my portfolio — an SDK platform that let brokerage and futures firms assemble their own branded trading app, sold through direct presales and managed across six live clients</p>
+  <header class="hero hero-case">
+    <img class="hero-art" src="../assets/images/mbroker/hero.png" alt="" aria-hidden="true">
+    <div class="hero-head" data-folio="02">
+      <p class="hero-kicker">Case Study · Frontier Projects</p>
+      <h1 class="hero-title">mBroker<br>A Proprietary App Platform for Brokerages</h1>
+      <p class="hero-sub">Owning the largest product in my portfolio — an SDK platform that let brokerage and futures firms assemble their own branded trading app — managed across six live clients and pitched through direct presales to seven more</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-block">
+        <span class="stat-num" data-target="6">0</span>
+        <p class="stat-label">brokerage &amp; futures clients</p>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num" data-target="1.2" data-decimals="1" data-suffix=" million+">0</span>
+        <p class="stat-label">end users</p>
+      </div>
+    </div>
 
     <dl class="meta-row">
       <div class="meta-item">
@@ -49,12 +67,12 @@
 
   <div class="tldr">
     <p class="tldr-label">Summary</p>
-    <p>mBroker was the largest product I managed at Systex. It's an SDK-based platform that lets a brokerage or futures firm build its own proprietary trading app — assembled from a library of pre-built quote, chart, and trading modules rather than written from scratch, with custom development available for anything outside that library. I owned it end-to-end: pitching the platform directly to prospective brokerage clients, managing the relationship and roadmap for six live clients serving over 1.2 million end users, and deciding which features graduated from our in-house app into the next twice-yearly standard release.</p>
+    <p>mBroker was the largest product I managed at Systex. It's an SDK-based platform that lets a brokerage or futures firm build its own proprietary trading app — assembled from a library of pre-built quote, chart, and trading modules rather than written from scratch, with custom development available for anything outside that library. I owned it end-to-end: presenting each new release on-site to our six existing clients, pitching the platform and SDK to seven more prospective brokerages, managing the relationship and roadmap for those six live clients serving over 1.2 million end users, and deciding which features graduated from our in-house app into the next twice-yearly standard release.</p>
     <p class="lang-note">Note — mBroker is built for the Taiwanese market, so the app screenshots throughout this case study remain in Traditional Chinese, their original language.</p>
   </div>
 
   <section id="context">
-    <p class="section-label">Background &amp; Challenge</p>
+    <p class="section-label"><span class="folio-num">01</span>Background &amp; Challenge</p>
     <h2>Eight years of iteration behind one platform shift</h2>
     <div class="prose">
       <p>mBroker didn't start as a proprietary-app platform — it was the result of eight years of incremental evolution inside Systex's brokerage business, starting from a single customized app in 2015, through multi-platform support, e-counter integration, and a real-time US-stock sub-brokerage launch in 2021. Each step added capability, but clients were still essentially renting a shared app experience.</p>
@@ -63,7 +81,7 @@
   </section>
 
   <section id="platform">
-    <p class="section-label">How the Platform Works</p>
+    <p class="section-label"><span class="folio-num">02</span>How the Platform Works</p>
     <h2>A component library, not a template</h2>
     <div class="prose">
       <p>mBroker's SDK is split into a Native layer and a Hybrid (webview) layer. Native components cover anything latency-sensitive — five-tier quotes, trend charts, technical analysis — so the UI stays consistent and fast regardless of which client is running it. Hybrid components cover service content that changes often, which meant a client could get a content update without waiting on an app-store release cycle.</p>
@@ -105,10 +123,12 @@
   </section>
 
   <section id="presales">
-    <p class="section-label">Presales &amp; Client Engagement</p>
+    <p class="section-label"><span class="folio-num">03</span>Presales &amp; Client Engagement</p>
     <h2>The part of the job that wasn't only design</h2>
     <div class="prose">
-      <p>Because mBroker is a B2B platform, a large part of my role had nothing to do with screens: it was presales. I built and delivered the pitch deck myself, walked prospective brokerage and futures clients through the SDK's capabilities and fee structure, and negotiated the commercial terms that turned a pitch into a signed client. Over my time on the product, that work brought on six live clients: Cathay Securities, Shin Kong International Securities, Yung Shin Securities, Yung Chuan Securities, President Futures Corp., and Concord Futures Corp.</p>
+      <p>Because mBroker is a B2B platform, a large part of my role had nothing to do with screens: it was standing in front of clients. That work ran in two directions at once — keeping the clients we already had, and introducing the platform to firms that had never used it.</p>
+      <p><strong>Existing clients.</strong> When I took over mBroker, it was already live with six brokerage and futures clients: Cathay Securities, Shin Kong International Securities, Yung Shin Securities, Yung Chuan Securities, President Futures Corp., and Concord Futures Corp. Every six to twelve months I travelled to each of them on-site to present the features in the new standard release — walking their product and IT teams through what had changed, why it mattered to their users, and how to adopt it. Those sessions were as much relationship maintenance as product briefing: they were where I heard each client's next request first, and where trust in the roadmap was kept or lost.</p>
+      <p><strong>New clients.</strong> In parallel, I ran presales for seven other brokerages that weren't yet on the platform. I built and delivered the pitch deck myself, presented both mBroker and its underlying SDK on-site, walked each firm through the platform's capabilities, delivery models and fee structure, and fielded technical questions from their engineering teams in the room.</p>
       <p>Each client could choose between two delivery models depending on how much of their own design and engineering capacity they wanted to commit. I used this standard SOP in every pitch so prospective clients could see exactly what they'd be responsible for under each path before signing — and so my own team knew what we were committing to deliver.</p>
     </div>
 
@@ -170,15 +190,16 @@
     </div>
 
     <div class="skill-tags">
-      <span>Presales pitching</span>
-      <span>Commercial negotiation</span>
+      <span>Presales to 7 new brokerages</span>
+      <span>On-site client presentations</span>
       <span>Client relationship management</span>
+      <span>Commercial negotiation</span>
       <span>Multi-tenant roadmap planning</span>
     </div>
   </section>
 
   <section id="scale">
-    <p class="section-label">Running It at Scale</p>
+    <p class="section-label"><span class="folio-num">04</span>Running It at Scale</p>
     <h2>Six clients, one shared roadmap</h2>
     <div class="prose">
       <p>Underneath all six client apps runs a shared backend infrastructure built for redundancy and real-time reliability, covering core functions like login, certificates, order placement, and account inquiries — backed by a dedicated test environment so new builds never touch the production path. Keeping six independently-branded clients stable on that shared infrastructure was supported by a team of 100+ R&amp;D engineers and 50 customer-service staff, running a 24-hour monitoring center that watched everything from connection health to data integrity in real time.</p>
@@ -204,16 +225,19 @@
   </section>
 
   <section id="result">
-    <p class="section-label">Outcome &amp; Reflection</p>
+    <p class="section-label"><span class="folio-num">05</span>Outcome &amp; Reflection</p>
     <h2>The biggest product I ever ran</h2>
     <span class="status-tag">Live · 6 brokerage &amp; futures clients · 1.2 million+ end users</span>
     <div class="prose">
-      <p>By the time I moved on, mBroker was live across six brokerage and futures clients and serving more than 1.2 million end users on a twice-yearly release cycle. Of everything I worked on at Systex, this is the clearest example of the job being bigger than the screens: closing a client meant as much presales and negotiation as it did product thinking, and keeping six clients happy on one shared platform meant constantly weighing one client's custom request against what was good for the roadmap as a whole.</p>
+      <p>By the time I moved on, mBroker was live across six brokerage and futures clients and serving more than 1.2 million end users on a twice-yearly release cycle. Of everything I worked on at Systex, this is the clearest example of the job being bigger than the screens: pitching to a new client meant as much presentation and listening as it did product thinking, and keeping six clients happy on one shared platform meant constantly weighing one client's custom request against what was good for the roadmap as a whole.</p>
     </div>
+    <blockquote class="pull-quote">
+      <p>Pitching to a new client meant as much presentation and listening as it did product thinking.</p>
+    </blockquote>
     <div class="result-marks">
       <div class="result-mark">
-        <h4>Presales to Signed Client</h4>
-        <p>Built and delivered the SDK pitch myself, converting prospective brokerage and futures firms into six signed, live clients</p>
+        <h4>Retaining and Pitching Clients</h4>
+        <p>Presented each standard release on-site to all six existing clients every 6–12 months, while pitching mBroker and its SDK to seven new brokerages</p>
       </div>
       <div class="result-mark">
         <h4>Platform at Scale</h4>

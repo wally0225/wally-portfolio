@@ -11,9 +11,12 @@
 <link rel="icon" type="image/png" href="../assets/images/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png">
 <script src="../assets/js/theme.js"></script>
+<script src="../assets/js/reveal.js" defer></script>
+<script src="../assets/js/progress.js" defer></script>
 </head>
 <body class="page-case">
 
+<div class="reading-progress"><div class="reading-progress-fill"></div></div>
 <nav>
   <div class="nav-inner">
     <div class="nav-left">
@@ -26,10 +29,12 @@
 </nav>
 
 <div class="wrap">
-  <header class="hero">
-    <p class="hero-kicker">Case Study · Pure Design</p>
-    <h1 class="hero-title">Online Account-Opening<br>Web Redesign &amp; RWD Build</h1>
-    <p class="hero-sub">Redesigning and independently coding the account-opening entry points for two Taiwanese brokerages, from Figma to production-ready HTML/CSS/JS</p>
+  <header class="hero hero-case">
+    <div class="hero-head" data-folio="01">
+      <p class="hero-kicker">Case Study · Pure Design</p>
+      <h1 class="hero-title">Online Account-Opening<br>Web Redesign &amp; RWD Build</h1>
+      <p class="hero-sub">Redesigning and independently coding the account-opening entry points for two Taiwanese brokerages, from Figma to production-ready HTML/CSS/JS</p>
+    </div>
 
     <dl class="meta-row">
       <div class="meta-item">
@@ -53,7 +58,7 @@
   </div>
 
   <section id="context">
-    <p class="section-label">Background &amp; Challenge</p>
+    <p class="section-label"><span class="folio-num">01</span>Background &amp; Challenge</p>
     <h2>An open brief,<br>and the whole pipeline to own</h2>
     <div class="prose">
       <p>These were among the first client-facing projects I owned after joining Systex. The brief from my manager was intentionally loose: the existing account-opening pages worked, but their layout felt dated, and it was on me to redesign them — there was no wireframe, no content strategy doc, and no pre-defined component library to start from.</p>
@@ -62,7 +67,7 @@
   </section>
 
   <section id="process">
-    <p class="section-label">How I Worked</p>
+    <p class="section-label"><span class="folio-num">02</span>How I Worked</p>
     <h2>Same process, two clients</h2>
     <div class="prose">
       <p>Both engagements followed the same three-part loop, repeated until the client signed off and the build shipped.</p>
@@ -84,7 +89,7 @@
   </section>
 
   <section id="capital">
-    <p class="section-label">Client 01</p>
+    <p class="section-label"><span class="folio-num">03</span>Client 01</p>
     <h2>Capital Securities</h2>
     <div class="prose">
       <p>Capital Securities' account-opening funnel needed the most complete rebuild of the two: a landing page that routes new vs. existing customers, a service-selection screen covering five account types, and a numbered multi-step flow through identity verification and contract signing — all wrapped in the brand's rabbit mascot and a warm gradient palette very different from the flatter, corporate look of a typical brokerage site.</p>
@@ -158,7 +163,7 @@
   </section>
 
   <section id="tcs">
-    <p class="section-label">Client 02</p>
+    <p class="section-label"><span class="folio-num">04</span>Client 02</p>
     <h2>Taiwan Cooperative Securities</h2>
     <div class="prose">
       <p>Taiwan Cooperative Securities' brief was narrower in scope — refresh the look of the account-opening entry page itself, which then hands off into the brokerage's existing back-end flow. I kept the redesign disciplined: the bank's teal-and-gold brand palette, a clear checklist of what to prepare before starting (ID, a Taiwan Cooperative Bank account), and a single, unambiguous "eopen" call to action.</p>
@@ -192,13 +197,16 @@
   </section>
 
   <section id="result">
-    <p class="section-label">Outcome &amp; Reflection</p>
+    <p class="section-label"><span class="folio-num">05</span>Outcome &amp; Reflection</p>
     <h2>Two live client builds,<br>no framework to lean on</h2>
     <span class="status-tag">Live · Shipped to production for both brokerage clients</span>
     <div class="prose">
       <p>Both redesigns shipped to production as each brokerage's live account-opening entry point. Because I was writing the front-end by hand rather than using a component framework, "responsive" meant deliberately testing and tuning breakpoints — including orientation-specific fixes for devices like the iPhone X and iPad — rather than getting it for free.</p>
       <p>Looking back, the loosest part of the brief — "just make it look current" — was also the most useful training: with no wireframe or content strategy handed to me, I had to develop my own judgment for what to simplify, what to keep, and how far to push back on client feedback that would have hurt the layout, all while owning the code that made it real.</p>
     </div>
+    <blockquote class="pull-quote">
+      <p>The loosest part of the brief — "just make it look current" — was also the most useful training.</p>
+    </blockquote>
     <div class="result-marks">
       <div class="result-mark">
         <h4>Independent Ownership</h4>

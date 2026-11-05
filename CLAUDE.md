@@ -81,7 +81,7 @@ portal card for that category.
   Avoid research-pivot framing anywhere on the site.
 - **CV as source of truth**: Career dates/titles on the home page timeline are
   taken directly from Wally's CV (Sep 2018–Jun 2021 BS Comp Sci NCCU; Jul
-  2020–Mar 2022 UI/UX Designer; Aug 2022–May 2024 Senior Product Manager, both
+  2020–Mar 2022 UI/UX Designer; Aug 2022–May 2024 Senior Product Specialist, both
   at Systex; Jul 2024–Nov 2026 Master of Computing, HCCC specialisation, ANU).
 
 ## Known open items
